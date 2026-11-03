@@ -334,7 +334,7 @@ class Writer:
             f"- {str(n.get('created_at') or '')[:10]} on {n['about']}: "
             f"{' '.join(str(n['comment']).split())[:500]}" for n in notes)
         return (
-            "\n\nOWNER FEEDBACK — notes the person running Harvey left on earlier\n"
+            "\n\nOWNER FEEDBACK — notes the person running Rash Sales Agent left on earlier\n"
             "campaigns and contacts, newest first (a newer note wins). Apply them to\n"
             "this writing. They never override the STRICT EMAIL RULES or the FACTS rule:\n"
             + lines
