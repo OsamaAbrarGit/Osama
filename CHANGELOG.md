@@ -9,6 +9,14 @@ minor versions can still change behaviour.
 
 ### Added
 
+- **A free Precleared key in one step.** `harvey setup` now offers to get a
+  free key for the cold-email check with just an email address, instead of
+  sending people to a web page and back, and `harvey precleared-key` does the
+  same later (`--email` asks nothing, for a coding agent setting Harvey up).
+  The key is saved in `.env` as `PRECLEARED_API_KEY` and never printed. When
+  the keyless allowance (10 checks a day) runs out, the Today page, `harvey
+  status` and the Outbox reason point to the command. Free keys now give 100
+  checks a day for their first 14 days, then 25, and the docs say so.
 - **Company fit and the company register.** The Companies tab now sorts by a
   0-100 fit score worked out from what Harvey already holds: the ICP sector
   match, a contact with a target title, the best email found, and an open
